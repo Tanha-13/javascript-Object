@@ -45,10 +45,11 @@ jsUser.greetingTwo = function(){
 
 // console.log(jsUser.greeting);
 // console.log(jsUser.greeting()); // undefined: because the function did not return anything
-jsUser.greeting();
-jsUser.greetingTwo();
+// jsUser.greeting();
+// jsUser.greetingTwo();
 
-
+// check the property available or not
+console.log(jsUser.hasOwnProperty('greeting'));
 
 
 //topic-02: using constructor

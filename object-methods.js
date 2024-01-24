@@ -1,4 +1,4 @@
-//topic: Object.freeze
+
 const mySym = Symbol('keys');
 const jsUser = {
     //key value pair
@@ -12,10 +12,28 @@ const jsUser = {
     location: 'Mirpur,Dhaka,Bangladesh',
     isLoggedIn : false,
     lastLoginDays: ['Monday','Saturday'],
+    greeting: function(){
+        console.log(`Hello ${this.name}`);
+    }
 
 };
+
+
+//topic: Object.freeze
 jsUser.email = 'tanha@gmail.com';
-console.log(jsUser);
-Object.freeze();
+// console.log(jsUser);
+// Object.freeze();
 jsUser.email = 'nusratanha@gmail.com';
-console.log(jsUser);
+// console.log(jsUser);
+
+// topic: Object.keys
+// console.log(Object.keys(jsUser));
+
+// topic: Object.entries
+// console.log(Object.entries(jsUser));
+// with flat method of array
+const allKeyValue = Object.entries(jsUser);
+// console.log(allKeyValue.flat(Infinity));
+
+//topic: Object.values
+console.log(Object.values(jsUser));
