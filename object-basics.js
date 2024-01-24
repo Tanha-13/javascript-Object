@@ -24,12 +24,30 @@ const jsUser = {
 };
 
 // accessing object values
-console.log(jsUser.email);
-console.log(jsUser["email"]);
+// console.log(jsUser.email);
+// console.log(jsUser["email"]);
 // console.log(jsUser.full name); // not possible to access this js object using dot notation
-console.log(jsUser["full name"]); //imp: this is recommended
+// console.log(jsUser["full name"]); //imp: this is recommended
 //accessing the symbol value
-console.log(typeof jsUser[mySym]);
+// console.log(jsUser[mySym]);
+
+// changing values
+jsUser.email = 'tanha@gmail.com';
+// console.log(jsUser['email']);
+
+// adding function to object and access
+jsUser.greeting = function(){
+    console.log('hello JavaScript User');
+}
+jsUser.greetingTwo = function(){
+    console.log(`Hello JavaScript User, ${this.name}`);
+}
+
+// console.log(jsUser.greeting);
+// console.log(jsUser.greeting()); // undefined: because the function did not return anything
+jsUser.greeting();
+jsUser.greetingTwo();
+
 
 
 
