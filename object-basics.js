@@ -23,7 +23,7 @@ const jsUser = {
 
 };
 
-// accessing object values
+// info:accessing object values: Property values are accessible the dot notation.
 // console.log(jsUser.email);
 // console.log(jsUser["email"]);
 // console.log(jsUser.full name); // not possible to access this js object using dot notation
