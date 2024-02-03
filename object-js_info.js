@@ -43,5 +43,18 @@ console.log(user[1]);
 
 // storing the key into a variable and access the value using square bracket notation.
 let key = 'userName';
-console.log(user[key]);
+//console.log(user[key]);
+
+//info: There are no limitations on property names. Reserved words can also be used as property name(key). 
+
+
+// It is possible to access any property in object. There will be no error if the property does not exist. it will just return an undefined.
+user.name; // output: undefined
+
+
+// in operator
+//syntax
+// "key" in object
+'userName' in user; // output: true
+'object' in user; // output: false.
 
