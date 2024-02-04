@@ -59,5 +59,22 @@ let permission2 = {canEdit: true};
 // console.log(user,clone);
 
 
+// Nested Cloning
+//problem:
+const userProfile ={
+    fullName: 'Nusrat',
+    sizes: {
+        height: 165,
+        weight: 62
+    }
+}
+let cloneProfile = Object.assign({},userProfile);
+userProfile === cloneProfile; //false
+userProfile.sizes === cloneProfile.sizes // true
+
+//imp: solution- deep cloning / structured cloning. StructuredClone method clones the object with all nested properties.
+cloneProfile = structuredClone(user);
+cloneProfile.sizes === userProfile.sizes // false
+
 
 
