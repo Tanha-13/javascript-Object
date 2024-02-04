@@ -7,7 +7,7 @@
 //an object variable does not store the object itself, but its 'address in memory'/ a reference.
 
 
-// the userName key is stored in memory and the variable user has a reference to it. While performing any action, the js engine looks at what's the address and performs the operation on the actual object.
+// the 'userName' key is stored in memory and the variable user has a reference to it. While performing any action, the js engine looks at what's the address and performs the operation on the actual object.
 let user = {
     userName: 'Nusrat'
 }
@@ -44,4 +44,20 @@ clone2.age = 25;
 // console.log(user,clone2);
 
 //way - 03
+// Object.assign
+// syntax
+// Object.assign(destination,sources)
+//info: the first argument 'destination' is a target object. the second argument 'sources' is a list of source objects.
+// copied to the existing object
+let permission1 = { canView: true};
+let permission2 = {canEdit: true};
+// Object.assign(user, permission1,permission2);
+// console.log(user);
+
+// copied to a new variable
+// const clone = Object.assign({}, user,permission1,permission2);
+// console.log(user,clone);
+
+
+
 
