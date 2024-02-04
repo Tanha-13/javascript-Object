@@ -1,4 +1,4 @@
-// singleton: when object is created using object literals, singleton is not created. But when is created using constructor, singleton is created.
+// singleton: when object is created using object literals, singleton is not created. But when it is created using constructor, singleton is created.
 
 // declaring a object
 // topic-01: object literals
